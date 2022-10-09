@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	//X^(x/2^Y)=X^(X>>Y)
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    string s;
+	    cin>>n;
+	    cin>>s;
+	    int cnt=0;
+	    for(int i=1;i<n;i++){
+	        if(s.at(i)=='1')break;
+	        else if(s.at(i)=='0') cnt++;
+	    }
+	    cout<<cnt+1<<endl;
+	}
+	return 0;
+}
